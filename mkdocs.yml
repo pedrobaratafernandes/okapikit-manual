@@ -1,0 +1,71 @@
+site_name: Manual do OkapiKit V1.20.4
+site_url: https://videojogoslusofona.github.io/OkapiKit/
+repo_url: https://github.com/VideojogosLusofona/OkapiKit
+repo_name: VideojogosLusofona/OkapiKit
+edit_uri: edit/main/docs/
+site_description: Documentação detalhada do OkapiKit para Unity 6
+author: Pedro Fernandes
+
+theme:
+  name: material
+  language: pt
+  palette:
+    - scheme: default
+      primary: white
+      accent: black
+      toggle:
+        icon: material/brightness-7
+        name: Mudar para modo escuro
+    - scheme: slate
+      primary: black
+      accent: white
+      toggle:
+        icon: material/brightness-4
+        name: Mudar para modo claro
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.indexes
+    - navigation.tracking
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+
+nav:
+  - Bem-vindo: index.md
+  - Primeiros Passos:
+      - Como Instalar: install.md
+      - Exemplos de Jogos: samples.md
+  - Conceitos Fundamentais:
+      - Hypertags: hypertag.md
+      - Componentes Escondidos: okapikit.md
+  - Referência de Componentes:
+      - Actions: action.md
+      - Helpers: helper.md
+      - Movement: movement.md
+      - Other: other.md
+      - Scriptables: scriptables.md
+      - Triggers: trigger.md
+      - UI: ui.md
+  - Índice Alfabético: components.md
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - attr_list
+  - md_in_html
