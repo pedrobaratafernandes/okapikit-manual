@@ -25,11 +25,20 @@ O manual está disponível publicamente em:
 
 Se desejar editar ou pré-visualizar o manual no seu computador:
 
+
 ### Requisitos
-1.  Ter o [Python](https://www.python.org/) instalado.
-2.  Instalar o MkDocs Material:
+1. Ter o [Python](https://www.python.org/) instalado.
+2. (Opcional, mas recomendado) Criar um ambiente virtual:
     ```bash
-    pip install mkdocs-material
+    python -m venv venv
+    # Ativar no Windows:
+    venv\Scripts\activate
+    # Ativar no macOS/Linux:
+    source venv/bin/activate
+    ```
+3. Instalar as dependências do projeto usando o requirements.txt:
+    ```bash
+    pip install -r requirements.txt
     ```
 
 ### Comandos Úteis
